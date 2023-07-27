@@ -41,15 +41,15 @@
 
 <body class="font-lato">
     <!-- header starts here  -->
-    <header class="container mx-auto">
+    <header class="container w-[90%] mx-auto">
         <div class="navbar md:bg-nav-back flex justify-between rounded-full md:px-6 my-2 md:my-10">
             <!-- nav menu for large device  -->
             <div class="navbar-center hidden lg:flex flex-1">
                 <ul class="menu menu-horizontal px-1">
-                    <li class="text-lg font-medium text-white"><a>Home</a></li>
-                    <li class="text-lg font-medium text-white"><a>About Us</a></li>
-                    <li class="text-lg font-medium text-white"><a>Shop</a></li>
-                    <li class="text-lg font-medium text-white"><a>All Fruits</a></li>
+                    <li class="text-lg font-medium text-white"><a class="hover:text-white">Home</a></li>
+                    <li class="text-lg font-medium text-white"><a class="hover:text-white">About Us</a></li>
+                    <li class="text-lg font-medium text-white"><a class="hover:text-white">Shop</a></li>
+                    <li class="text-lg font-medium text-white"><a class="hover:text-white">All Fruits</a></li>
                 </ul>
             </div>
             <!-- nav logo  -->
@@ -60,13 +60,13 @@
             <!-- nav search bar  -->
             <div class="flex-1 hidden md:flex justify-end relative">
                 <input type="text" placeholder="Search here" class="rounded-full w-2/3 p-2 pl-5 outline-0" />
-                <i class="fa-solid fa-magnifying-glass absolute right-5"></i>
+                <a href="" class="absolute right-5"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <!-- small device menu -->
             <div class="dropdown lg:hidden">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        class="inline-block w-5 h-5 stroke-current">
+                        class="inline-block w-5 h-5 stroke-current md:stroke-white">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -86,10 +86,10 @@
         </div>
     </header>
     <!-- main starts here  -->
-    <main class="container mx-auto">
+    <main class="container w-[90%] mx-auto">
         <!-- banner carousel starts here  -->
         <section>
-            <div class="carousel w-full h-60 md:h-auto">
+            <div class="carousel w-full h-60 md:h-80 lg:h-auto">
                 <!-- first slide  -->
                 <div id="slide1" class="carousel-item relative w-full flex justify-center">
                     <img src="./images/banner1.png" class="w-full" />
@@ -98,7 +98,7 @@
                         <h1 class="text-2xl md:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep
                         </h1>
                         <p class="text-white font-medium">We supply highly quality organic products</p>
-                        <button class="btn bg-nav-back text-white border-none normal-case btn-sm md:btn-md">Shop
+                        <button class="btn bg-nav-back text-white border-none normal-case btn-sm md:btn-md hover:bg-nav-back hover:shadow-lg hover:shadow-[#942123]">Shop
                             Now</button>
                     </div>
                     <div class="absolute transform -translate-y-1/2 left-5 top-1/2 z-20">
@@ -190,9 +190,9 @@
         </section>
         <!-- deal section  -->
         <section>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 my-10 px-10 md:px-0">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0 my-10 px-10 md:px-0">
                 <!-- deal info part  -->
-                <div class="text-center md:text-left md:w-1/2 space-y-4">
+                <div class="text-center lg:text-left md:w-1/2 space-y-4">
                     <h2 class="text-2xl md:text-5xl font-extrabold">Deal of the day</h2>
                     <p class="text-sm md:text-base">Contrary to popular belief, is not simply random text. It has roots
                         in a piece of classical Latin
@@ -408,7 +408,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn bg-nav-back text-white border-none normal-case block mx-auto my-8">Shop
+            <button class="btn bg-nav-back text-white border-none normal-case block mx-auto my-8 hover:bg-nav-back hover:shadow-lg hover:shadow-[#942123]">Shop
                 All</button>
         </section>
         <!-- meet our team member section  -->
